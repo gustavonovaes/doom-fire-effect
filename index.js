@@ -1,9 +1,10 @@
 'use strict'
 
-const fireWidth = 110;
+const fireWidth = Math.floor(window.innerWidth / 10);
 const fireHeight = 13
 
 const colorPallet = [
+  'transparent',
   '#040201',
   '#160803',
   '#270f05',
