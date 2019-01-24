@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loky Noob</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        #canvas {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #canvas table {
+            width: 100%;
+        }
+
+        #canvas table td>div {
+            position: relative;
+            padding: .5em;
+        }
+
+        #canvas table td>div span {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 10px;
+        }
+
+        .loky-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .loky-container--text {
+            color: red;
+            align-self: center;
+            font-family: 'Nova Mono', monospace;
+            text-transform: uppercase;
+            font-size: 10em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loky-container">
+        <h1 class="loky-container--text">Loky Noob</h1>
+    </div>
+    
+    <div id="canvas">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
