@@ -1,3 +1,3 @@
-# doom-fire-effect-loky-noob
+# doom-fire-effect
 
-https://gustavonovaes.github.io/doom-fire-effect-loky-noob/
+https://gustavonovaes.github.io/doom-fire-effect/
