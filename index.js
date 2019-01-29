@@ -1,23 +1,47 @@
 'use strict'
 
 const fireWidth = Math.floor(window.innerWidth / 10);
-const fireHeight = 13
+const fireHeight = 36
 
 const colorPallet = [
   'transparent',
-  '#040201',
-  '#160803',
-  '#270f05',
-  '#381507',
-  '#4a1c0a',
-  '#5b220c',
-  '#6c290e',
-  '#7e2f11',
-  '#8f3613',
-  '#a03c15',
-  '#b24317',
-  '#c3491a',
-  '#d5501c',
+  "#070707",
+  "#1f0707",
+  "#2f0f07",
+  "#470f07",
+  "#571707",
+  "#671f07",
+  "#771f07",
+  "#8f2707",
+  "#9f2f07",
+  "#af3f07",
+  "#bf4707",
+  "#c74707",
+  "#df4f07",
+  "#df5707",
+  "#df5707",
+  "#d75f07",
+  "#d75f07",
+  "#d7670f",
+  "#cf6f0f",
+  "#cf770f",
+  "#cf7f0f",
+  "#cf8717",
+  "#c78717",
+  "#c78f17",
+  "#c7971f",
+  "#bf9f1f",
+  "#bf9f1f",
+  "#bfa727",
+  "#bfa727",
+  "#bfaf2f",
+  "#b7af2f",
+  "#b7b72f",
+  "#b7b737",
+  "#cfcf6f",
+  "#dfdf9f",
+  "#efefc7",
+  "#ffffff"
 ]
 
 function start() {
@@ -25,7 +49,7 @@ function start() {
 
   const lastColorPalletIndex = colorPallet.length - 1
   const incializedDataStructure = applyFireSource(dataStructure, fireWidth, fireHeight, lastColorPalletIndex)
-  
+
   const canvas = document.querySelector("#canvas")
 
   const step = () => {
@@ -70,7 +94,7 @@ function calculateFirePropagation(dataStructure, fireWidth, fireHeight) {
       const flameDecay = Math.floor(Math.random() * 4)
       const newColorPalletIndex = colorPalletIndex - flameDecay
 
-      const windSimulationDecay = Math.floor(Math.random() * 3)      
+      const windSimulationDecay = Math.floor(Math.random() * 3)
       const newFlameIndex = flameIndex - windSimulationDecay
 
       dataStructure[newFlameIndex] = newColorPalletIndex < 0 ? 0 : newColorPalletIndex
