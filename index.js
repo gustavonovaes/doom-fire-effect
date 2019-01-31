@@ -1,6 +1,6 @@
 'use strict'
 
-const fireWidth = Math.floor(window.innerWidth / 10);
+const fireWidth = Math.floor(window.innerWidth / 20);
 const fireHeight = 36
 
 const colorPallet = [
@@ -109,17 +109,11 @@ function renderWithTable(canvas, dataStructure, fireWidth, fireHeight) {
   for (let row = 0; row < fireHeight; row++) {
     html += '<tr>'
     for (let column = 0; column < fireWidth; column++) {
-      html += '<td>'
-
       const flameIndex = column + (row * fireWidth)
       const colorPalletIndex = dataStructure[flameIndex]
-
       const color = colorPallet[colorPalletIndex]
 
-      html += `<div style="background-color: ${color}"></div>`
-      // html += `<div/><span>${flameIndex}</span>${colorPalletIndex}</div>`
-
-      html += '</td>'
+      html += `<td style="background-color: ${color}"></td>`
     }
     html += '</tr>'
   }
